@@ -5,13 +5,16 @@
   </head>
   <body>
     <h1>Enter a 3 or 4-digit code</h1>
-    <form>
-      <input type="text" id="codeInput" placeholder="Enter code" />
-      <button type="button" onclick="getCode()">Submit</button>
+    <form id="codeForm">
+      <input type="text" id="codeInput" placeholder="Enter code" name="code" />
+      <button>Submit</button>
     </form>
     <p id="output"></p>
     <script>
-      function getCode() {
+      let codeForm = document.getElementById("codeForm");
+      codeForm.addEventListener("submit", getCode);
+      function getCode(e) {
+        e.preventDefault();
         let code = document.getElementById("codeInput").value;
         let songTitles = {
           1564: [
@@ -45,6 +48,8 @@
             "What's my age again",
             "When i come around",
             "With or without you",
+
+            "<a href='https://docs.google.com/document/d/1VofNEeKP55UtKDLNT1fBBSxl0V7uMj07xE5lG_CrV9w/edit#heading=h.e6993j891rbw' target='_blank'>MORE!</a>",
           ],
 
           1465: [
@@ -63,6 +68,7 @@
             "Unwell (matchbox 20)",
             "Vindicated (dashboard confessional Chorus)",
             "1,000 ships (verse) Rachel Platten",
+            "All that we need (niko moon) (intro/verse/chorus)",
           ],
 
           1454: [
