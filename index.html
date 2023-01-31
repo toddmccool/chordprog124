@@ -4,10 +4,10 @@
     <title>JavaScript Program</title>
   </head>
   <body>
-    <h1>Enter a 3 or 4-digit code</h1>
+    <h1>Enter a 3 or 4-digit chord progression</h1>
     <form id="codeForm">
-      <input type="text" id="codeInput" placeholder="Enter code" name="code" />
-      <button>Submit</button>
+      <input type="text" id="codeInput" placeholder="1564" name="code" />
+      <button>Show me Songs with this progression!</button>
     </form>
     <p id="output"></p>
     <script>
@@ -120,7 +120,7 @@
             "Song titles for code " + code + ": " + songTitles[code].join(", ");
         } else {
           document.getElementById("output").innerHTML =
-            "Invalid code. Please try again.";
+            "<a href='https://docs.google.com/document/d/1VofNEeKP55UtKDLNT1fBBSxl0V7uMj07xE5lG_CrV9w/edit#' target='_blank'>that progression is not yet specifically entered, go to this link!</a>";
         }
       }
     </script>
