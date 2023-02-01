@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JavaScript Program</title>
+    <title>Button Hyperlink</title>
   </head>
   <body>
-    <h1>Enter a 3 or 4-digit chord progression</h1>
-    <form id="codeForm">
-      <input type="text" id="codeInput" placeholder="1564" name="code" />
-      <button>Show me Songs with this progression!</button>
-    </form>
+    <button
+      onclick="window.location.href = 'https://docs.google.com/document/d/1xPGS9ke4Y0Z_BBkPAbUiEk0Wp7K-yuyFhlsw3KIEyvE/edit#heading=h.e6993j891rbw';"
+    >
+      1564
+    </button>
+
+    <button
+      onclick="window.location.href = 'https://docs.google.com/document/d/1C3V5V46xRUfnF_perww1Qlmnw1RDpO3A0PWnaINpyKE/edit#heading=h.ytu3apa8wzzn';"
+    >
+      6415
+    </button>
+
+    <button
+      onclick="window.location.href = 'https://docs.google.com/document/d/1VaZAAYx-ZJYFcLA0RglEEc1QT1ioOuMEuJpQvKaMQ7Q/edit#heading=h.t5r1azo9g0uo';"
+    >
+      145
+    </button>
+
+    <button
+      onclick="window.location.href = 'https://docs.google.com/document/d/1x6wOYMvDtixjfE6F4SmIX5OnbDXq0x5ytpGUgF5KYfg/edit#heading=h.vipa9chb11hg';"
+    >
+      4156
+    </button>
+
+    <button
+      onclick="window.location.href = 'https://docs.google.com/document/d/1OZrhBIB_q_iz_ArpEc-L-FcxmMo6xsA4r1i8HrkVOp4/edit#heading=h.97dc1f9ei2hq';"
+    >
+      4165
+    </button>
+
+    <button
+      onclick="window.location.href = 'https://docs.google.com/document/d/1Kv4goxcNPDQcxly3NM9pWh4yhn2OzJcwB_6P5sE1sCk/edit?usp=sharing';"
+    >
+      1465
+    </button>
 
     <h1>or look for a list a of Song Titles instead</h1>
     <form id="songTitleLink">
@@ -17,129 +47,5 @@
         >click HERE!</a
       >
     </form>
-
-    <p id="output"></p>
-    <script>
-      let codeForm = document.getElementById("codeForm");
-      codeForm.addEventListener("submit", getCode);
-      function getCode(e) {
-        e.preventDefault();
-        let code = document.getElementById("codeInput").value;
-        let songTitles = {
-          1564: [
-            "Anyway you want it",
-            "Beast of burden",
-            "Damnit",
-            "Demons - Imagine Dragons (whole song)",
-            "Don't do me like that (Tom Petty)",
-            "Don't stop believin",
-            "Edge of glory",
-            "Fight song",
-            "Good (Better than Ezra)",
-            "Hey soul sister",
-            "I knew you were trouble (chorus and verse halftime)",
-            "I'm yours",
-            "Land down under",
-            "Love (Lana del Ray)",
-            "Mean (Taylor Swift - chorus)",
-            "No woman no cry",
-            "Paparazzi (Lady Gaga)",
-            "Say you wont let go",
-            "She will be loved",
-            "So lonely (Police)",
-            "Spiderwebs (chorus)",
-            "Take me home tonight",
-            "Take me home tonight (chorus)",
-            "Tender is the night (Intro and verse) - Jackson Brown",
-            "Torn - chorus",
-            "Wagon wheel",
-            "We didn't start the fire (verse)",
-            "What's my age again",
-            "When i come around",
-            "With or without you",
-
-            "<a href='https://docs.google.com/document/d/1xPGS9ke4Y0Z_BBkPAbUiEk0Wp7K-yuyFhlsw3KIEyvE/edit?usp=sharing' target='_blank'>MORE!</a>",
-          ],
-
-          1465: [
-            "Broken & Beautiful (kelly clarkson [pre, chorus/hook (2x faster)] )",
-            "Bruises (ch mostly Train)",
-            "Hit me with your beat shot ([ch])",
-            "I’ll keep you my dirty little secret (chorus)",
-            "More than a feeling (boston)",
-            "Mr. brightside (jealousy turning snakes into the sea)",
-            "She drives me crazy (fYc)",
-            "Shut up and dance",
-            "skyscraper (demi lovato - verse and 1st half of chorus)",
-            "That’s the way it is ",
-            "The way i am (Ingrid Michaelson) - verse",
-            "Trumpets (jason derulo)",
-            "Unwell (matchbox 20)",
-            "Vindicated (dashboard confessional Chorus)",
-            "1,000 ships (verse) Rachel Platten",
-            "All that we need (niko moon) (intro/verse/chorus)",
-          ],
-
-          145: [
-            "500 miles (Proclaimers)",
-            "Angel (Shaggy)",
-            "Angel of the morning",
-            "Blitzkreig bop",
-            "Born to run",
-            "Buddy Holly",
-            "Crash (here you go way too fast)",
-            "Everybody talks",
-            "Every little thing she does is magic (chorus)",
-            "Express yourself [ah sookie sookie]",
-            "Free fallin",
-            "Get out of my dreams get into my car",
-            "Guantanamela",
-            "How will i know (verse) and chorus just adds 6 at the end",
-            "Hungry eyes (chorus)",
-            "I hate myself for lovin you",
-            "I love rock and roll",
-            "I'll be there for you",
-            "Kiss me deadly (Lita Ford)",
-            "La bamba",
-            "Let's hear it for the boy",
-            "Like a rolling stone",
-            "Only the good die young",
-            "Pour some sugar on me",
-            "Red red wine",
-            "Some people call me the spacecowboy",
-            "Stand (R.E.M)",
-            "Stir it up",
-            "The tide is high",
-            "To be with you",
-            "Twist and shout",
-            "Underneath it all (No Doubt)",
-            "What makes you beautiful",
-            "Wild thing",
-            "Will you still love me tomorrow (verse and hook) \n",
-
-            "<a href='https://docs.google.com/document/d/1VaZAAYx-ZJYFcLA0RglEEc1QT1ioOuMEuJpQvKaMQ7Q/edit?usp=sharing' target='_blank'>145!</a>",
-          ],
-
-          6415: [
-            "<a href='https://docs.google.com/document/d/1C3V5V46xRUfnF_perww1Qlmnw1RDpO3A0PWnaINpyKE/edit?usp=sharing' target='_blank'>6415!</a>",
-          ],
-
-          4165: [
-            "<a href='https://docs.google.com/document/d/1OZrhBIB_q_iz_ArpEc-L-FcxmMo6xsA4r1i8HrkVOp4/edit?usp=sharing' target='_blank'>4165!</a>",
-          ],
-
-          4156: [
-            "<a href='https://docs.google.com/document/d/1x6wOYMvDtixjfE6F4SmIX5OnbDXq0x5ytpGUgF5KYfg/edit?usp=sharing' target='_blank'>4156!</a>",
-          ],
-        };
-        if (songTitles[code]) {
-          document.getElementById("output").innerHTML =
-            "Song titles for code " + code + ": " + songTitles[code].join(", ");
-        } else {
-          document.getElementById("output").innerHTML =
-            "<a href='https://docs.google.com/document/d/1VofNEeKP55UtKDLNT1fBBSxl0V7uMj07xE5lG_CrV9w/edit#' target='_blank'>that progression is not yet specifically entered, go to this link!</a>";
-        }
-      }
-    </script>
   </body>
 </html>
