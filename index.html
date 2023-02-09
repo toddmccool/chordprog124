@@ -16,12 +16,18 @@
         background-color: black;
         color: red;
         font-weight: bold;
+        display: inline-block;
+        vertical-align: top;
       }
       @media only screen and (min-width: 768px) {
         button {
           width: auto;
           padding: 10px 20px;
         }
+      }  h4 {
+        color: yellowgreen;
+        display: inline-block;
+        vertical-align: top;
       }
     </style>
   </head>
@@ -29,162 +35,177 @@
   <body>
     <h1>
       <b>welcome to Todd's Chord Progression Matcher! </b> <br />
-      <br />
+      
     </h1>
     Click on the button below that matches your progression to see the songs
     that use it <i> & why they sound mysteriously similar </i> <br />
 
-
-
-    <button
-    onclick="window.location.href = 'https://docs.google.com/document/d/1TWsx0bG0GEhPzNfgHPu5sMrMiIT4t-NdJsjgNNglCAs/edit?usp=sharing';"
-  >1-5
-  </button>
+    <p id="basicApp" .... ></p>
 
     
+    <h4>Ionian Based Progressions (happy)</h4>
 
-
-
-
-    <button
-      onclick="window.location.href = 'https://docs.google.com/document/d/1AxTrTxcJeQQrVtG6yfRqAUoecC_uAm99A86BCCvsNj4/edit?usp=sharing';"
-    >1524
-    </button>
+    <button onclick="window.location.href = 'oneFive.html#oneFiveList'">1-5</button>
 
     
-
-
-
-
-
-
-    <button
-      onclick="window.location.href = 'https://docs.google.com/document/d/1xPGS9ke4Y0Z_BBkPAbUiEk0Wp7K-yuyFhlsw3KIEyvE/edit#heading=h.e6993j891rbw';"
-    >
-      1564
-    </button>
-
-    
-
-    <button
-      onclick="window.location.href = 'https://docs.google.com/document/d/1VaZAAYx-ZJYFcLA0RglEEc1QT1ioOuMEuJpQvKaMQ7Q/edit#heading=h.t5r1azo9g0uo';"
-    >
-      145
-    </button>
-
-
-    <button
-      onclick="window.location.href = 'https://docs.google.com/document/d/1Kv4goxcNPDQcxly3NM9pWh4yhn2OzJcwB_6P5sE1sCk/edit?usp=sharing';"
-    >
-      1465
-    </button>
-
-<br>
-
-
-<button
-onclick="window.location.href = 'https://docs.google.com/document/d/16m5DFVGbMfYxNpXyrSozvsHkeYYaXj8uYYyc4e20Hh4/edit?usp=sharing';"
->
-2415
-</button>
-
-
-
-<br>
-
-
-<button
-onclick="window.location.href = 'https://docs.google.com/document/d/1kXrb4HlWlqaOVLYvpQ_kDdhcGOKq3gSVxy2om4XuDdM/edit?usp=sharing';"
->
-3625
-</button>
-
-
-<br>
-
-
-
-    <button
-      onclick="window.location.href = 'https://docs.google.com/document/d/1x6wOYMvDtixjfE6F4SmIX5OnbDXq0x5ytpGUgF5KYfg/edit#heading=h.vipa9chb11hg';"
-    >
-      4156
-    </button>
-
-    <button
-      onclick="window.location.href = 'https://docs.google.com/document/d/1OZrhBIB_q_iz_ArpEc-L-FcxmMo6xsA4r1i8HrkVOp4/edit#heading=h.97dc1f9ei2hq';"
-    >
-      4165
-    </button>
-
-
-    <button
-    onclick="window.location.href = ' https://docs.google.com/document/d/1mkl2lGn26FB2JcT12nybT5_BBg77pt2QA1u_TU3nRaA/edit?usp=sharing';"
-  >
-    4-5
-  </button>
    
+    <button onclick="window.location.href = 'oneFiveTwoFour.html#oneFiveTwoFourList'">1-5-2-4</button>
+    
+
+
+    <button onclick="window.location.href = 'oneFiveSixFour.html#topOfOneFiveSixFourList'" target="_top">1-5-6-4</button>
+
+
+
+    <button onclick="window.location.href = 'oneFourFive.html#topOfOneFourFiveList'" target="_top">1-4-5</button>
+
+
+
+    <button onclick="window.location.href = 'oneFourSixFive.html#topOfoneFourSixFiveList'" target="_top">1-4-6-5</button>
+
+
+    
+    
+
+
+
+
+
+<br>
+<h4>dorian Based Progressions (sad'ish :jazz/Blues)</h4>
+
+
+<button onclick="window.location.href = 'twoFourOneFive.html#topOftwoFourOneFiveList'" target="_top">2-4-1-5</button>
 
 
 
 
 
 
-    <button
-      onclick="window.location.href = 'https://docs.google.com/document/d/1rejWp3Kv7XwIUUq0qyMQMdS1pXNSZnOVJtX0DwKmJf0/edit?usp=sharing';"
-    >
-      465
-    </button>
+
+
+
+
+
+
+<br>
+
+
+
+
+<h4>phrygian Based Progressions (leading or exotic if the 3 is major)</h4>
+<button onclick="window.location.href = 'threeSixTwoFive.html#topOfthreeSixTwoFiveList'" target="_top">3-6-2-5</button>
+
+
+
+
+
+<br>
+
+
+<h4>Lydian Based Progressions (uber-happy)</h4>
+<button onclick="window.location.href = 'fourOneFiveSix.html#topOffourOneFiveSixList'" target="_top">4-1-5-6</button>
+
+<button onclick="window.location.href = 'fourOneSixFive.html#topOffourOneSixFiveList'" target="_top">4-1-6-5</button>
+
+
+
+
+
+<button onclick="window.location.href = 'fourFive.html#topOffourFiveList'" target="_top">4-5</button>
+
+
+<button onclick="window.location.href = 'fourSixFive.html#topOffourSixFiveList'" target="_top">4-6-5</button>
+
+
+
 
     <br>
 
+    <h4>Mixo-Lydian Based Progressions (Bluesy-happy'ish)</h4>
 
-    <button
-    onclick="window.location.href = 'https://docs.google.com/document/d/1ENKpxe1m-JEL43Vw1oF10it6fuQV066HA40WAY5XbvQ/edit?usp=sharing';"
-  >
-    5415
-  </button>
+
+    <button onclick="window.location.href = 'fiveFouroneFive.html#topOffiveFouroneFiveList'" target="_top">5-4-1-5</button>
     
-
-
-
 
 
 
     <br>
 
+    <h4>aeloian Based Progressions (sad : dark'ish Pop)</h4>
 
+    <button onclick="window.location.href = 'sixFouroneFive.html#topOfsixFouroneFiveList'" target="_top">6-4-1-5</button>
+    
 
-    <button
-    onclick="window.location.href = 'https://docs.google.com/document/d/1njhMWeNs4PN1LkHElbhMplc24PbkQcCKVG2_0QODugo/edit?usp=sharing';"
-  >
-    6154
-  </button>
+    
+
+    <button onclick="window.location.href = 'sixOneFiveFour.html#topOfsixOneFiveFourList'" target="_top">6-1-5-4</button>
+    
+
+    
+  <button onclick="window.location.href = 'sixTwoFiveOne.html#topOfsixTwoFiveOneList'" target="_top">6-2-5-1</button>
+    
+
+  
 
     
 
 
-
-    <button
-    onclick="window.location.href = 'https://docs.google.com/document/d/1P1euva-16iaTNXu8Nb2DdKsDaWvrDZoHhM3kw-QhXg0/edit?usp=sharing';"
-  >
-    6251
-  </button>
-
-    
-
-
-
-
-
-
-    <button
-    onclick="window.location.href = 'https://docs.google.com/document/d/1C3V5V46xRUfnF_perww1Qlmnw1RDpO3A0PWnaINpyKE/edit#heading=h.ytu3apa8wzzn';"
-  >
-    6415
-  </button>
 
 
       <h2>or look for a list a of <a href="https://docs.google.com/document/d/1rF9e_11Rv8hHiFfbpcoNfI_UHPpgubGQdAkD0Yf8KZI/edit?usp=sharing">Song Titles</a> instead</h2>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterA'" target="_top">A</button>
+     
+    
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterB'" target="_top">B</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterC'" target="_top">C</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterD'" target="_top">D</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterE'" target="_top">E</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterF'" target="_top">F</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterG'" target="_top">G</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterH'" target="_top">H</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterI'" target="_top">I</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterJ'" target="_top">J</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterK'" target="_top">K</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterL'" target="_top">L</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterM'" target="_top">M</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterN'" target="_top">N</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterO'" target="_top">O</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterP'" target="_top">P</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterQ'" target="_top">Q</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterR'" target="_top">R</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterS'" target="_top">S</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterT'" target="_top">T</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterU'" target="_top">U</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterV'" target="_top">V</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterW'" target="_top">W</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterY'" target="_top">Y</button>
+
+ <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterZ'" target="_top">Z</button>
+
 
 
 
