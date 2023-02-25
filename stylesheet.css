@@ -45,3 +45,8 @@ h4 {
   display: inline-block;
   vertical-align: top;
 }
+
+.major {
+  font-family: impact;
+  background-color: rgb(255, 242, 0);
+}
