@@ -1,8 +1,6 @@
 body {
   font-size: 16px;
-}
 
-body {
   background-color: rgb(237, 117, 117);
   color: white;
   padding: 20px 0px;
@@ -47,8 +45,36 @@ h4 {
 
 .minor {
   font-family: impact;
+  background-color: #10e726;
+}
+
+.minorDor {
+  font-family: impact;
   background-color: #84a9ed;
 }
+
+.minorPhr {
+  font-family: impact;
+  background-color: #09ec6f;
+}
+
+.ionAeo {
+  font-family: impact;
+  background-color: rgb(255, 242, 0);
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.lydDor {
+  font-family: impact;
+  background-color: rgb(236, 148, 14);
+}
+
+.mixPhr {
+  font-family: impact;
+  background-color: rgb(236, 14, 236);
+}
+
 @media only screen and (min-width: 768px) {
   button {
     width: auto;
