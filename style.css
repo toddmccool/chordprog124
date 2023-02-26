@@ -5,9 +5,10 @@ body {
 body {
   background-color: rgb(237, 117, 117);
   color: white;
+  padding: 20px 0px;
 }
 
-button {
+.majDiv button {
   width: auto;
   margin: 10px 0;
   padding: 10px;
@@ -17,7 +18,20 @@ button {
   display: inline-block;
   vertical-align: top;
 
-  background-color: #e4cfde;
+  background-color: #e5ed84;
+}
+
+.minDiv button {
+  width: auto;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: black;
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: top;
+
+  background-color: #84a9ed;
 }
 
 h4 {
@@ -31,6 +45,10 @@ h4 {
   background-color: rgb(255, 242, 0);
 }
 
+.minor {
+  font-family: impact;
+  background-color: #84a9ed;
+}
 @media only screen and (min-width: 768px) {
   button {
     width: auto;
