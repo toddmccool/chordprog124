@@ -138,6 +138,7 @@ h4 {
 @media only screen and (max-width: 767px) {
   .alphaLetters {
     max-width: 100%;
+    flex-wrap: wrap;
     overflow-wrap: break-word;
   }
 }
