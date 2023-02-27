@@ -1,23 +1,43 @@
 body {
   font-size: 16px;
-}
-
-body {
   background-color: rgb(237, 117, 117);
   color: white;
+  padding: 20px 0px;
 }
 
-button {
-  width: auto;
+.welcome {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.majDiv button,
+.minDiv button {
+  width: 100%;
   margin: 10px 0;
   padding: 10px;
   background-color: black;
   color: red;
   font-weight: bold;
-  display: inline-block;
-  vertical-align: top;
+  display: block;
+}
 
-  background-color: #e4cfde;
+.majDiv button {
+  background-color: #e5ed84;
+}
+
+.minDiv button {
+  background-color: #84a9ed;
 }
 
 h4 {
@@ -26,29 +46,70 @@ h4 {
   vertical-align: top;
 }
 
-.major {
+.majorIon,
+.majorLyd,
+.majorMix,
+.minor,
+.minorDor,
+.minorPhr,
+.minorAeo,
+.ionAeo,
+.lydDor,
+.mixPhr {
   font-family: impact;
+  background-color: inherit;
+}
+
+.majorIon {
   background-color: rgb(255, 242, 0);
 }
 
+.majorLyd {
+  background-color: rgb(231, 199, 103);
+}
+
+.majorMix {
+  background-color: rgb(243, 150, 106);
+}
+
+.minor {
+  background-color: #10e726;
+}
+
+.minorDor {
+  background-color: #84a9ed;
+}
+
+.minorPhr {
+  background-color: #09ec6f;
+}
+
+.minorAeo {
+  background-color: #09ecd9;
+}
+
+.ionAeo {
+  background-color: rgb(255, 242, 0);
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.lydDor {
+  background-color: rgb(236, 148, 14);
+}
+
+.mixPhr {
+  background-color: rgb(236, 14, 236);
+}
+
 @media only screen and (min-width: 768px) {
-  button {
+  .majDiv button,
+  .minDiv button {
     width: auto;
-    padding: 10px 20px;
+    display: inline-block;
   }
-}
-
-/* Styles for small screen sizes */
-@media (min-width: 320px) {
-  /* Additional styles for small screens */
-}
-
-/* Styles for medium screen sizes */
-@media (min-width: 768px) {
-  /* Additional styles for medium screens */
-}
-
-/* Styles for large screen sizes */
-@media (min-width: 1200px) {
-  /* Additional styles for large screens */
+  .alphaLetters {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
