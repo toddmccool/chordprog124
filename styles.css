@@ -1,16 +1,10 @@
-/* Set base font size */
 body {
   font-size: 16px;
-}
-
-/* Set background color and text color */
-body {
   background-color: rgb(237, 117, 117);
   color: white;
   padding: 20px 0px;
 }
 
-/* Animate welcome text */
 .welcome {
   animation-duration: 3s;
   animation-name: slidein;
@@ -28,66 +22,63 @@ body {
   }
 }
 
-/* Style buttons */
 .majDiv button,
 .minDiv button {
-  width: auto;
+  width: 100%;
   margin: 10px 0;
   padding: 10px;
   background-color: black;
   color: red;
   font-weight: bold;
-  display: inline-block;
-  vertical-align: top;
+  display: block;
 }
 
-/* Style major and minor scales */
+.majDiv button {
+  background-color: #e5ed84;
+}
+
+.minDiv button {
+  background-color: #84a9ed;
+}
+
 h4 {
   color: rgb(10, 15, 1);
   display: inline-block;
   vertical-align: top;
 }
 
-.majorIon,
-.majorLyd,
-.majorMix,
-.minor,
-.minorDor,
-.minorPhr,
-.minorAeo {
-  font-family: impact;
-  background-color: #10e726;
-}
-
-.ionAeo {
-  font-family: impact;
-  background-color: rgb(255, 242, 0);
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-/* Style specific scales */
 .majorIon {
+  font-family: impact;
   background-color: rgb(255, 242, 0);
 }
 
 .majorLyd {
+  font-family: impact;
   background-color: rgb(231, 199, 103);
 }
 
 .majorMix {
+  font-family: impact;
   background-color: rgb(243, 150, 106);
 }
 
+.minor {
+  font-family: impact;
+  background-color: #10e726;
+}
+
 .minorDor {
+  font-family: impact;
   background-color: #84a9ed;
 }
 
 .minorPhr {
+  font-family: impact;
   background-color: #09ec6f;
 }
 
 .minorAeo {
+  font-family: impact;
   background-color: #09ecd9;
 }
 
@@ -95,27 +86,30 @@ h4 {
   font-family: impact;
   background-color: rgb(255, 242, 0);
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
-/* Style scales on larger screens */
 @media only screen and (min-width: 768px) {
-  button {
+  .majDiv button,
+  .minDiv button {
     width: auto;
     padding: 10px 20px;
+    display: inline-block;
   }
 }
 
-/* Style alpha letters */
+@media only screen and (max-width: 767px) {
+  .ionAeo {
+    font-family: impact;
+    background-color: rgb(255, 242, 0);
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+  }
+}
+
 .alphaLetters {
   background-color: rgb(243, 243, 237);
   display: flex;
   flex-wrap: nowrap;
-}
-
-/* Adjust ionAeo width on smaller screens */
-@media only screen and (max-width: 767px) {
-  .ionAeo {
-    width: 100%;
-  }
 }
