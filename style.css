@@ -6,6 +6,23 @@ body {
   padding: 20px 0px;
 }
 
+.welcome {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 .majDiv button {
   width: auto;
   margin: 10px 0;
@@ -38,9 +55,19 @@ h4 {
   vertical-align: top;
 }
 
-.major {
+.majorIon {
   font-family: impact;
   background-color: rgb(255, 242, 0);
+}
+
+.majorLyd {
+  font-family: impact;
+  background-color: rgb(231, 199, 103);
+}
+
+.majorMix {
+  font-family: impact;
+  background-color: rgb(243, 150, 106);
 }
 
 .minor {
@@ -56,6 +83,11 @@ h4 {
 .minorPhr {
   font-family: impact;
   background-color: #09ec6f;
+}
+
+.minorAeo {
+  font-family: impact;
+  background-color: #09ecd9;
 }
 
 .ionAeo {
@@ -80,6 +112,12 @@ h4 {
     width: auto;
     padding: 10px 20px;
   }
+}
+
+.alphaLetters {
+  background-color: rgb(243, 243, 237);
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 /* Styles for small screen sizes */
