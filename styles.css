@@ -136,6 +136,13 @@ h4 {
 }
 
 @media only screen and (max-width: 767px) {
+  .alphaLetters {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .ionAeo {
     font-family: impact;
     background-color: rgb(255, 242, 0);
