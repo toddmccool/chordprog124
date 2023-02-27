@@ -10,101 +10,49 @@ body {
   animation-name: slidein;
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
+/* ... other CSS rules ... */
 
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-.majDiv button,
-.minDiv button {
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  background-color: black;
-  color: red;
-  font-weight: bold;
-  display: block;
-}
-
-.majDiv button {
-  background-color: #e5ed84;
-}
-
-.minDiv button {
-  background-color: #84a9ed;
-}
-
-h4 {
-  color: rgb(10, 15, 1);
-  display: inline-block;
-  vertical-align: top;
-}
-
-.majorIon {
-  font-family: impact;
-  background-color: rgb(255, 242, 0);
-}
-
-.majorLyd {
-  font-family: impact;
-  background-color: rgb(231, 199, 103);
-}
-
-.majorMix {
-  font-family: impact;
-  background-color: rgb(243, 150, 106);
-}
-
-.minor {
-  font-family: impact;
-  background-color: #10e726;
-}
-
-.minorDor {
-  font-family: impact;
-  background-color: #84a9ed;
-}
-
-.minorPhr {
-  font-family: impact;
-  background-color: #09ec6f;
-}
-
-.minorAeo {
-  font-family: impact;
-  background-color: #09ecd9;
-}
-
-.ionAeo {
-  font-family: impact;
-  background-color: rgb(255, 242, 0);
-  display: flex;
-  flex-wrap: wrap;
-}
-
-@media only screen and (min-width: 768px) {
-  .majDiv button,
-  .minDiv button {
-    width: auto;
-    padding: 10px 20px;
-    display: inline-block;
-  }
-}
-
+/* Media query for mobile devices */
 @media only screen and (max-width: 767px) {
   .ionAeo {
     font-family: impact;
     background-color: rgb(255, 242, 0);
+    display: block;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .ionAeo h4 {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .ionAeo .minDiv,
+  .ionAeo .majDiv {
     display: flex;
-    flex-wrap: nowrap;
-    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ionAeo button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #e5ed84;
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+  }
+
+  .ionAeo .majorIon {
+    background-color: rgb(255, 242, 0);
+    width: 100%;
+  }
+
+  .ionAeo .minorAeo {
+    background-color: #09ecd9;
   }
 }
 
