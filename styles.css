@@ -1,10 +1,16 @@
+/* Set base font size */
 body {
   font-size: 16px;
+}
+
+/* Set background color and text color */
+body {
   background-color: rgb(237, 117, 117);
   color: white;
   padding: 20px 0px;
 }
 
+/* Animate welcome text */
 .welcome {
   animation-duration: 3s;
   animation-name: slidein;
@@ -15,31 +21,27 @@ body {
     margin-left: 100%;
     width: 300%;
   }
+
   to {
     margin-left: 0%;
     width: 100%;
   }
 }
 
+/* Style buttons */
 .majDiv button,
 .minDiv button {
-  width: 100%;
+  width: auto;
   margin: 10px 0;
   padding: 10px;
   background-color: black;
   color: red;
   font-weight: bold;
-  display: block;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.majDiv button {
-  background-color: #e5ed84;
-}
-
-.minDiv button {
-  background-color: #84a9ed;
-}
-
+/* Style major and minor scales */
 h4 {
   color: rgb(10, 15, 1);
   display: inline-block;
@@ -52,14 +54,19 @@ h4 {
 .minor,
 .minorDor,
 .minorPhr,
-.minorAeo,
-.ionAeo,
-.lydDor,
-.mixPhr {
+.minorAeo {
   font-family: impact;
-  background-color: inherit;
+  background-color: #10e726;
 }
 
+.ionAeo {
+  font-family: impact;
+  background-color: rgb(255, 242, 0);
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Style specific scales */
 .majorIon {
   background-color: rgb(255, 242, 0);
 }
@@ -70,10 +77,6 @@ h4 {
 
 .majorMix {
   background-color: rgb(243, 150, 106);
-}
-
-.minor {
-  background-color: #10e726;
 }
 
 .minorDor {
@@ -89,27 +92,30 @@ h4 {
 }
 
 .ionAeo {
+  font-family: impact;
   background-color: rgb(255, 242, 0);
   display: flex;
   flex-wrap: nowrap;
 }
 
-.lydDor {
-  background-color: rgb(236, 148, 14);
-}
-
-.mixPhr {
-  background-color: rgb(236, 14, 236);
-}
-
+/* Style scales on larger screens */
 @media only screen and (min-width: 768px) {
-  .majDiv button,
-  .minDiv button {
+  button {
     width: auto;
-    display: inline-block;
+    padding: 10px 20px;
   }
-  .alphaLetters {
-    display: flex;
-    flex-wrap: wrap;
+}
+
+/* Style alpha letters */
+.alphaLetters {
+  background-color: rgb(243, 243, 237);
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Adjust ionAeo width on smaller screens */
+@media only screen and (max-width: 767px) {
+  .ionAeo {
+    width: 100%;
   }
 }
