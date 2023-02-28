@@ -1,0 +1,5 @@
+.column-wrapper {
+  columns: 4;
+  height: auto;
+  overflow: hidden;
+}
