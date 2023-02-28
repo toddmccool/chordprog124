@@ -117,7 +117,17 @@ h4 {
 .alphaLetters {
   background-color: rgb(243, 243, 237);
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.alphaLetters div {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* Styles for small screen sizes */
