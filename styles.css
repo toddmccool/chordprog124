@@ -139,7 +139,7 @@ h4 {
   .alphaLetters {
     max-width: 100%;
     flex-wrap: wrap;
-    overflow-wrap: break-word;
+    word-break: break-all;
   }
 }
 
