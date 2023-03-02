@@ -5,10 +5,39 @@ body {
   color: white;
   padding: 20px 0px;
 }
-
+/*
 .welcome {
   animation-duration: 3s;
   animation-name: slidein;
+
+  transition-delay: 3s;
+  transform: rotate(1turn);
+}
+
+
+*/
+.welcome {
+  position: relative; /* Create a positioning context for the child element */
+  left: 0px; /* Move the element off-screen */
+  animation: slidein 1s ease-in-out forwards, rotate 3s linear 1s forwards;
+}
+
+@keyframes slidein {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 100;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(1turn);
+  }
 }
 
 @keyframes slidein {
@@ -21,6 +50,10 @@ body {
     margin-left: 0%;
     width: 100%;
   }
+}
+
+button:hover {
+  transform: scale(1.05);
 }
 
 .majDiv button {
