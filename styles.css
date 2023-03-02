@@ -1,9 +1,10 @@
 body {
   font-size: 16px;
 
-  background-color: rgb(237, 117, 117);
+  background-color: rgb(40, 38, 38);
   color: white;
-  padding: 20px 0px;
+  padding: 10px 0px;
+  margin: 6px;
 }
 /*
 .welcome {
@@ -65,8 +66,11 @@ button:hover {
   font-weight: bold;
   display: inline-block;
   vertical-align: top;
+  flex-basis: auto;
 
   background-color: #e5ed84;
+
+  max-height: 95px;
 }
 
 .minDiv button {
@@ -78,49 +82,58 @@ button:hover {
   font-weight: bold;
   display: inline-block;
   vertical-align: top;
-
+  flex-basis: auto;
   background-color: #84a9ed;
+  max-height: 90px;
 }
 
 h4 {
   color: rgb(10, 15, 1);
   display: inline-block;
   vertical-align: top;
+  max-height: 80px;
 }
 
 .majorIon {
   font-family: impact;
   background-color: rgb(255, 242, 0);
+  max-height: 95px;
 }
 
 .majorLyd {
   font-family: impact;
   background-color: rgb(231, 199, 103);
+  max-height: 80px;
 }
 
 .majorMix {
   font-family: impact;
   background-color: rgb(243, 150, 106);
+  max-height: 80px;
 }
 
 .minor {
   font-family: impact;
   background-color: #10e726;
+  max-height: 80px;
 }
 
 .minorDor {
   font-family: impact;
   background-color: #84a9ed;
+  max-height: 70px;
 }
 
 .minorPhr {
   font-family: impact;
   background-color: #09ec6f;
+  max-height: 80px;
 }
 
 .minorAeo {
   font-family: impact;
   background-color: #09ecd9;
+  max-height: 80px;
 }
 
 .ionAeo {
@@ -128,21 +141,28 @@ h4 {
   background-color: rgb(255, 242, 0);
   display: flex;
   flex-wrap: nowrap;
+  max-height: 95px;
+  padding: 0px 10px;
 }
 
 .lydDor {
   font-family: impact;
   background-color: rgb(236, 148, 14);
+  max-height: 70px;
+  padding: 0px 10px;
 }
 
 .mixPhr {
   font-family: impact;
   background-color: rgb(236, 14, 236);
+  max-height: 80px;
+  padding: 0px 10px;
 }
 .column-wrapper {
   columns: 4;
   height: auto;
   overflow: hidden;
+  max-height: 80px;
 }
 
 @media only screen and (min-width: 768px) {
