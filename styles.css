@@ -65,7 +65,7 @@ button:hover {
   margin: 2% 0;
   padding: 2%;
   background-color: black;
-  color: red;
+  color: rgb(17, 1, 1);
   font-weight: bold;
   display: inline-block;
   vertical-align: top;
@@ -133,6 +133,16 @@ h4 {
   flex-shrink: 1;
 }
 
+.ionAeoA {
+  font-family: impact;
+  background-color: rgb(255, 242, 0);
+  /*  display: flex;
+  flex-wrap: nowrap;
+  max-height: 6%;
+  padding: 0.5%;
+    flex-shrink: 1;*/
+}
+
 .lydDor {
   font-family: impact;
   background-color: rgb(236, 148, 14);
@@ -143,4 +153,10 @@ h4 {
   font-family: impact;
   background-color: rgb(236, 14, 173);
   max-height: 3;
+}
+
+@media screen and (max-width: 1149px) {
+  .ionAeo {
+    flex-wrap: wrap;
+  }
 }
