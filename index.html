@@ -22,13 +22,28 @@
     </div>
     </h1>
    <h5>Click on the button below that matches your progression to see the songs
-    that use it <i> & why they sound mysteriously similar </i> <br />
+    that use it <i> & why they sound mysteriously similar </i> JUMP TO STARTING NUMBER
+    
+   <!-- <h4 id="myHeading">My Heading</h4>
+    <a href="#myHeading">Scroll to My Heading</a>-->
+    
+
+    <button onclick="document.getElementById('majorIon').scrollIntoView();">I </button>
+    <button onclick="document.getElementById('minorDor').scrollIntoView();"> ii </button>
+    <button onclick="document.getElementById('minorPhr').scrollIntoView();"> iii </button>
+    <button onclick="document.getElementById('majorLyd').scrollIntoView();"> IV </button>
+    <button onclick="document.getElementById('majorMix').scrollIntoView();"> V</button>
+    <button onclick="document.getElementById('minorAeo').scrollIntoView();"> vi </button>
+OR...
+<button onclick="document.getElementById('alphaLetters').scrollIntoView();"> SongTitles </button>
+
+    <br />
   </h5> 
     
 
     <div class="majDiv">
        <div class='ionAeo'>
-    <h4 class="majorIon">Ionian Based Progressions (happy)</h4>
+    <h4 class="majorIon" id="majorIon">Ionian Based Progressions (happy)</h4>
 
     <br>
 
@@ -93,7 +108,7 @@
 <div class="minDiv">
   <div class='lydDor'>
   
-<h4 class="minorDor">dorian Based Progressions <i>(jazz/ jamBand /Dark Pop)</i></h4>
+<h4 class="minorDor" id="minorDor">dorian Based Progressions <i>(jazz/ jamBand /Dark Pop)</i></h4>
 
 
 
@@ -120,7 +135,7 @@
 <div class="minDiv">
 <div class='mixPhr'> 
 
-<h4 class="minorPhr">phrygian Based Progressions (leading or exotic if the 3 is major)</h4>
+<h4 class="minorPhr" id="minorPhr">phrygian Based Progressions (leading or exotic if the 3 is major)</h4>
 <button onclick="window.location.href = 'threeSixTwoFive.html#topOfthreeSixTwoFiveList'" target="_top">3-6-2-5<br>jazz turnAround</button>
 
 
@@ -131,7 +146,7 @@
 
 <div class="majDiv">
   <div class='lydDor'>
-<h4 class="majorLyd">Lydian Based Progressions (uber-happy)</impact></h4>
+<h4 class="majorLyd" id="majorLyd">Lydian Based Progressions (uber-happy)</impact></h4>
 <button onclick="window.location.href = 'fourOneFiveSix.html#topOffourOneFiveSixList'" target="_top">4-1-5-6<br>wistful</button>
 
 <button onclick="window.location.href = 'fourOneSixFive.html#topOffourOneSixFiveList'" target="_top">4-1-6-5<br>Sweet</button>
@@ -161,7 +176,7 @@
     <br>
     <div class="majDiv">
       <div class='mixPhr'>
-    <h4 class="majorMix">Mixo-Lydian Based Progressions (Bluesy-happy'ish)</h4>
+    <h4 class="majorMix" id="majorMix">Mixo-Lydian Based Progressions (Bluesy-happy'ish)</h4>
 
     
     <button onclick="window.location.href = 'fiveOneFourOne.html#topOffiveOneFourOne'" target="_top">5-1-4-1<br>upbeat rock pop late 60s vibe</button>
@@ -178,7 +193,7 @@
     <br>
   <div class="minDiv">
     <div class='ionAeoA'>
-    <h4 class="minorAeo">aeloian Based Progressions (sad : dark'ish Pop)</h4>
+    <h4 class="minorAeo" id="minorAeo">aeloian Based Progressions (sad : dark'ish Pop)</h4>
 
 
     <button onclick="window.location.href = 'sixOneFourFive.html#sixOneFourFiveList'" target="_top">6-1-4-5 <br> 6-1-3-5</button>
@@ -213,8 +228,7 @@
 
 
      
-     
-
+<h4 class="alphaLetters" id="alphaLetters"></h4>
       <div class="alphaLetters">
         <button onclick="window.location.href = 'alphabetical.html#topOfalphabetLetterNums'" target="_top">#'s</button>
 
@@ -274,7 +288,8 @@
 
 <h2>or look for a list a of <a href="https://docs.google.com/document/d/1rF9e_11Rv8hHiFfbpcoNfI_UHPpgubGQdAkD0Yf8KZI/edit?usp=sharing">Song Titles</a> instead</h2>
 
-
+<button onclick="document.getElementById('basicApp').scrollIntoView();"> Back to Top! </button>
+    
 
     </form>
   </body>
