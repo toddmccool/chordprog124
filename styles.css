@@ -82,6 +82,7 @@ h4 {
 }
 
 .majorIon {
+  display: inline-flex;
   font-family: impact;
   background-color: rgb(255, 242, 0);
   max-height: 6%;
@@ -131,11 +132,13 @@ h4 {
   max-height: 6%;
   padding: 0.5%;
   flex-shrink: 1;
+  flex-wrap: wrap;
 }
 
 .ionAeoA {
   font-family: impact;
   background-color: rgb(255, 242, 0);
+
   /*  display: flex;
   flex-wrap: nowrap;
   max-height: 6%;
