@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1 5 b7 4</title>
+  </head>
+  <body>
+    <h1>I - V - bVII - IV</h1>
+    <h2>
+      <button onclick="window.location.href = 'index.html#basicApp'">
+        back to app
+      </button>
+    </h2>
+    <h3>
+      <p id="oneFiveFlatSevenFourList" <br>
+        Linger <i>chorus</i> <br />Just Another Day (oingo boingo) <i>verse</i
+        ><br />Maneater <i>verse</i><br />Rio <i>chorus</i>
+        <br />Waterfalls<br />
+        <br />
+        <br />
+      </p>
+    </h3>
+  </body>
+</html>
